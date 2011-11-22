@@ -1,7 +1,7 @@
 A simple implementation of the Caesar cipher in 22 lines of Ruby.
 
-    puts Ceasar.encrypt(72,"Hello World! This is an encypted message.") => "BYFFI QILFX! NBCM CM UH YHWSJNYX GYMMUAY."
-    puts Ceasar.decrypt(72,"BYFFI QILFX! NBCM CM UH YHWSJNYX GYMMUAY.") => "Hello World! This is an encypted message."
+    puts Ceasar.encipher(72,"Hello World! This is an encypted message.") => "BYFFI QILFX! NBCM CM UH YHWSJNYX GYMMUAY."
+    puts Ceasar.decipher(72,"BYFFI QILFX! NBCM CM UH YHWSJNYX GYMMUAY.") => "Hello World! This is an encypted message."
 
 I'm thinking of implementing a "crack" method that will attempt to crack
 the encoded message.
