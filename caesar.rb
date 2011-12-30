@@ -10,9 +10,9 @@ class Caesar
 
   def self.apply_algorithm(direction, shift, message)
     letters = %w{A B C D E F G H I J K L M N O P Q R S T U V W X Y Z}
-      message.upcase.split(//).map do |letter|
+    shift = direction == :encipher ? shift : -shift
+    message.upcase.split(//).map do |letter|
       if letters.include?(letter)
-        shift = direction == :encipher ? shift : -shift
         letters.rotate(shift)[letters.index(letter)]
       else
         letter
